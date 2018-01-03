@@ -1,0 +1,117 @@
+/*
+ * index.css
+ * v1.0
+ * 郭嘉乐
+ * 2018.01.03
+ *
+*/
+@charset "utf-8";
+h1{
+	padding: 30px 0;
+	font-size: 28px;
+	font-weight: 600;
+	text-align: center;
+}
+nav,
+.content{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+/* 菜单导航 */
+.nav-wrapper{
+	height: 45px;
+	line-height: 45px;
+	background-color: #eac5ab;
+}
+nav a{
+	padding: 0 20px;
+	font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+    nav a{ padding: 0 0 0 5px;}
+}
+@media screen and (max-width: 320px) {
+    nav a{ font-size: 12px;}
+}
+
+/* 内容 */
+.content-wrapper{
+	background-color: #fafafa
+}
+.content-wrapper ul {
+	padding: 20px;
+	overflow: hidden;
+}
+.content-wrapper ul li{
+	width: 50%;
+	float: left;
+}
+.content-wrapper ul li>p{ 
+	padding: 20px;
+	text-indent: 2rem;
+}
+.content-wrapper ul li .cw-box{
+	width: 46%;
+	padding: 2%;
+	float: left;
+}
+.content-wrapper ul li.w60{ width: 60%;}
+.content-wrapper ul li.w40{ width: 40%;}
+.content-wrapper ul.recommend{
+	padding: 10px;
+}
+.content-wrapper ul.recommend li{
+	width: 25%;
+	padding-left: -10px;
+    padding-right: -10px;
+}
+.content-wrapper ul.recommend li .recommend-content,
+.content-wrapper ul.recommend li .recommend-content p{ padding: 10px;}
+@media screen and (max-width: 480px) {
+    .content-wrapper ul li,
+    .content-wrapper ul li .cw-box,
+    .content-wrapper ul li.w60,
+    .content-wrapper ul li.w40,
+    .content-wrapper ul.recommend li{ width: 100%; padding: 0;}
+    .content-wrapper ul li .cw-box p,
+    .content-wrapper ul li>p{
+    	padding: 10px 0;
+    }
+}
+/* 底部 */
+footer{
+	padding: 20px 0 10px;
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+}
+footer ul{
+	margin: 0 auto;
+	overflow: hidden;
+	display: inline-block;
+}
+footer ul li{
+	position: relative;
+	padding: 0 20px;
+	font-size: 14px;
+	float: left;
+}
+footer ul li:after{
+	position: absolute;
+	content: "";
+	width: 1px;
+	top: 3px;
+	right: 0;
+	bottom: 3px;
+	background-color: #ddd;
+}
+footer ul li:last-child:after { display: none;}
+footer ul li a{ color: #ddd;}
+footer p{
+	padding-top: 10px;
+	font-size: 12px;
+}
+footer p.title{ color: #999;}
+
+
